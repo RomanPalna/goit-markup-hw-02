@@ -78,20 +78,19 @@ ul .team {
   color: var(--primary-text-color);
 }
 
-ul .team-vocation {
+.link a {
   color: var(--title-text-color);
 }
-
-.social-link a {
-  color: var(--title-text-color);
-}
-.social-link a:hover,
-.social-link a:focus {
+.link a:hover,
+.link a:focus {
   color: var(--link-seconary-color);
   background-color: var(--link-primary-color);
 }
-  
+.link p {
+  color: var(--title-text-color);
+}
 
+/* Наши клиенты */
 .clients a {
   color: var(--title-text-color);
 }
@@ -101,9 +100,13 @@ ul .team-vocation {
   background-color: var(--link-primary-color);
 }
 
+.link .title:hover {
+  color: var(--link-seconary-color);
+  background: var(--link-primary-color);
+}
 /* Футер */
 footer {
-  background: #2F303A;
+  background: #2f303a;
 }
 footer .adress,
 footer b {
