@@ -234,7 +234,7 @@ color: rgba(255, 255, 255, 0.4);
 }
 
 /* Навигация портфолио */
-div.portfolio-filter .btn {
+.portfolio-filter .btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -243,8 +243,8 @@ div.portfolio-filter .btn {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-div.portfolio-filter .btn:hover,
-div.portfolio-filter .btn:focus {
+.portfolio-filter .btn:hover,
+.portfolio-filter .btn:focus {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
 }
