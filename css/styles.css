@@ -95,7 +95,7 @@ h3 {
   color: var(--primary-text-color);
 }
 
-.button {
+.button-check {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
   font-weight: 700;
@@ -104,8 +104,8 @@ h3 {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.button:hover,
-.button:focus {
+.button-check:hover,
+.button-check:focus {
   color: var(--link-primary-color);
   background-color: var(--link-seconary-color);
 }
@@ -234,17 +234,17 @@ color: rgba(255, 255, 255, 0.4);
 }
 
 /* Навигация портфолио */
-.portfolio-filter button {
+div.portfolio-filter .btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
-.portfolio-filter button:hover,
-.portfolio-filter button:focus {
+div.portfolio-filter .btn:hover,
+div.portfolio-filter .btn:focus {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
 }
