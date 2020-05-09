@@ -225,10 +225,35 @@ letter-spacing: 0.06em;
 }
 
 footer .rights{
-  font-weight: normal;
+font-weight: normal;
 font-size: 12px;
 line-height: 2;
 text-align: center;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.4);
 }
+
+/* Навигация портфолио */
+.portfolio-filter button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.portfolio-filter button:hover,
+.portfolio-filter button:focus {
+  color: var(--link-seconary-color);
+  background: var(--link-primary-color);
+}
+
+/* Список предложений */
+.list-offer .offer {
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+}
+
