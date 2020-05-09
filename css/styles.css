@@ -12,82 +12,150 @@ ul {
 }
 body {
   background-color: #e5e5e5;
+  font-family: Roboto, sans-serif;
 }
 a {
   text-decoration: none;
 }
 
-/* Стили header */
-.link-current {
+/* Стили ЛОГО */
+.link .logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--link-primary-color);
 }
-.link-current:hover,
-.link-current:focus {
-  color: var(--primary-text-color);
+.link .logo-second {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
 }
 
-.link-nav {
+/* Навигация (левая сторона)*/
+.nav,
+.adress a {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav .link-current {
+  color: var(--link-primary-color);
+}
+.nav .link-nav {
   color: var(--primary-text-color);
 }
-.link-nav:hover,
-.link-nav:focus {
+.nav .link-nav:hover,
+.nav .link-nav:focus {
   color: var(--link-primary-color);
 }
 
-.adress-link a {
+/* Навигация (правая сторона) */
+.adress a {
   color: var(--title-text-color);
+  font-style: normal;
 }
-.adress-link a:hover,
-.adress-link a:focus {
+.adress a:hover,
+.adress a:focus {
   color: var(--link-primary-color);
 }
 
 /* Стили Main */
 h1 {
   color: var(--link-seconary-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+h3 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
 }
 
 .button {
   color: var(--link-seconary-color);
-  background-color: var(--link-primary-color);
+  background: var(--link-primary-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
-.button:hover {
+.button:hover,
+.button:focus {
   color: var(--link-primary-color);
   background-color: var(--link-seconary-color);
 }
-
-h2 {
-  color: var(--primary-text-color);
-}
-
 p.principles {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
-h3.princeples {
-  color: var(--primary-text-color);
-}
-
+/* Чем мы занимаемся */
 section .business {
   color: var(--link-seconary-color);
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
 }
 
 /* Наша команда */
-ul .team {
+.team.build {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
-.link a {
+.team .vocation {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.link a:hover,
-.link a:focus {
+.team .social {
+  color: #afb1b8;
+}
+.team .social:hover,
+.team .social:focus {
   color: var(--link-seconary-color);
   background-color: var(--link-primary-color);
-}
-.link p {
-  color: var(--title-text-color);
 }
 
 /* Наши клиенты */
@@ -104,19 +172,35 @@ ul .team {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
 }
+
 /* Футер */
 footer {
   background: #2f303a;
 }
-footer .adress,
+footer .adress {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--link-seconary-color)
+}
 footer b {
   color: var(--link-seconary-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-
 footer .mail,
 footer .tel {
   color: var(--footer-color);
-}
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
 
 footer p {
   color: rgba(255, 255, 255, 0.6);
@@ -129,4 +213,22 @@ footer .social-link:hover,
 footer .social-link:focus {
   color: var(--link-seconary-color);
   background-color: var(--link-primary-color);
+}
+footer .submit {
+font-weight: 900;
+font-size: 16px;
+line-height: 1.87;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+}
+
+footer .rights{
+  font-weight: normal;
+font-size: 12px;
+line-height: 2;
+text-align: center;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.4);
 }
