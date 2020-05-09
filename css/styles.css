@@ -35,7 +35,50 @@ a {
   letter-spacing: 0.03em;
   color: #000000;
 }
+/* Навигация портфолио */
+main .btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+main .btn:hover,
+main .btn:focus {
+  color: var(--link-seconary-color);
+  background: var(--link-primary-color);
+}
+/* Список предложений */
+.list-offer .offer {
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+}
 
+.list-offer .portfolio {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--primary-text-color);
+}
+
+ul .offer {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+}
+
+a.linkto:hover,
+a.linkto:focus{
+  color: var(--link-seconary-color);
+  background: var(--link-primary-color);
+}
 /* Навигация (левая сторона)*/
 .nav,
 .adress a {
@@ -76,7 +119,7 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-h2 {
+h2.index {
   font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
@@ -202,10 +245,6 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 
-footer p {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 footer .social-link {
   color: var(--title-text-color);
 }
@@ -233,27 +272,5 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.4);
 }
 
-/* Навигация портфолио */
-.portfolio-filter .btn {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-.portfolio-filter .btn:hover,
-.portfolio-filter .btn:focus {
-  color: var(--link-seconary-color);
-  background: var(--link-primary-color);
-}
 
-/* Список предложений */
-.list-offer .offer {
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--title-text-color);
-}
 
