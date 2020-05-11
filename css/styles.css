@@ -152,6 +152,7 @@ h3 {
   color: var(--link-primary-color);
   background-color: var(--link-seconary-color);
 }
+/* Принципы */
 p.principles {
   font-family: Roboto;
   font-style: normal;
@@ -160,6 +161,14 @@ p.principles {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+h3.principles {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
 }
 
 /* Чем мы занимаемся */
