@@ -35,6 +35,16 @@ a {
   letter-spacing: 0.03em;
   color: #000000;
 }
+.link .studio {
+  text-transform: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--link-seconary-color);
+}
+
 /* Навигация портфолио */
 main .btn {
   font-family: inherit;
@@ -181,7 +191,6 @@ section .business {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background: rgba(47, 48, 58, 0.8);
 }
 
 /* Наша команда */
@@ -270,7 +279,7 @@ footer .submit {
 }
 
 footer .rights {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 2;
   text-align: center;
