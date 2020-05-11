@@ -27,7 +27,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--link-primary-color);
 }
-.link .logo-second {
+.link b {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -52,30 +52,30 @@ main .btn:focus {
 }
 /* Список предложений */
 .list-offer .offer {
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 .list-offer .portfolio {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
 }
 
 ul .offer {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 a.linkto:hover,
-a.linkto:focus{
+a.linkto:focus {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
 }
@@ -221,12 +221,12 @@ footer {
   background: #2f303a;
 }
 footer .adress {
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--link-seconary-color)
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--link-seconary-color);
 }
 footer b {
   color: var(--link-seconary-color);
@@ -239,14 +239,11 @@ footer b {
 footer .mail,
 footer .tel {
   color: var(--footer-color);
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-
-footer .social-link {
-  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 footer .social-link:hover,
 footer .social-link:focus {
@@ -254,23 +251,20 @@ footer .social-link:focus {
   background-color: var(--link-primary-color);
 }
 footer .submit {
-font-weight: 900;
-font-size: 16px;
-line-height: 1.87;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
-footer .rights{
-font-weight: normal;
-font-size: 12px;
-line-height: 2;
-text-align: center;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.4);
+footer .rights {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
 }
-
-
-
