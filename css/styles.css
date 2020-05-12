@@ -233,6 +233,12 @@ section .business {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
 }
+.clients li {
+  display: inline;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
 
 /* Футер */
 footer {
