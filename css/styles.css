@@ -18,6 +18,16 @@ a {
   text-decoration: none;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* Стили ЛОГО */
 .link .logo {
   font-family: Raleway, sans-serif;
