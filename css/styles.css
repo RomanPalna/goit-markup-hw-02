@@ -133,9 +133,7 @@ button {
   font: inherit;
   color: inherit;
   background-color: transparent;
-}
 
-main .btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -148,8 +146,8 @@ main .btn {
   display: inline-block;
 }
 
-main .btn:hover,
-main .btn:focus {
+button:hover,
+button:focus {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
 }
@@ -472,6 +470,7 @@ footer .rights {
 .link.container {
   display: flex;
   flex-direction: column;
+  margin-top: 48px;
 }
 
 div ul {
@@ -481,5 +480,24 @@ div ul {
 
 footer div {
   display: flex;
+  align-items: flex-start;
   justify-content: space-around;
+}
+
+footer {
+  width: 1630px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer b {
+  margin: 0;
+  padding: 0;
+}
+
+.join,
+.subscribe {
+  margin-top: 56px;
 }
