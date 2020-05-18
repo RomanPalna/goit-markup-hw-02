@@ -29,20 +29,62 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+/* Стили Main */
+h1 {
+  color: var(--link-seconary-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 46px;
+}
+h2.index {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+h2.none,
+h1.none {
+  display: none;
+  padding: 0 0;
+  margin: 0 0;
+}
+h3 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
 .container {
   padding-bottom: 94px;
 }
 
 /* Стили ЛОГО */
-nav.mario {
+header,
+section.container {
   padding-bottom: 0px;
   width: 1230px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
-.link .logo {
+
+a.logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -50,7 +92,8 @@ nav.mario {
   letter-spacing: 0.03em;
   color: var(--link-primary-color);
 }
-.link b {
+
+.logo b {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -58,6 +101,7 @@ nav.mario {
   letter-spacing: 0.03em;
   color: #000000;
 }
+
 .link .studio {
   text-transform: none;
   font-family: Raleway, sans-serif;
@@ -68,7 +112,29 @@ nav.mario {
   color: var(--link-seconary-color);
 }
 
+.mario .nav {
+  display: flex;
+  margin-left: 86px;
+}
+
+.nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* Навигация портфолио */
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
 main .btn {
   font-family: inherit;
   font-weight: 500;
@@ -81,10 +147,16 @@ main .btn {
   padding: 6px 22px;
   display: inline-block;
 }
+
 main .btn:hover,
 main .btn:focus {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
+}
+
+.filter {
+  text-align: center;
+  margin-top: 94px;
 }
 /* Список предложений */
 .list-offer .offer {
@@ -115,6 +187,33 @@ a.linkto:focus {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
 }
+
+.list-offer {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 94px;
+
+  flex-wrap: wrap;
+}
+
+.flex {
+  width: 380px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.flex:nth-child(3n) {
+  margin-right: 0;
+}
+
+.flex:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 /* Навигация (левая сторона)*/
 .nav,
 .adress a {
@@ -134,11 +233,25 @@ a.linkto:focus {
 .nav .link-nav:focus {
   color: var(--link-primary-color);
 }
+.nav .link-current,
+.nav .link-nav {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 /* Навигация (правая сторона) */
 .adress {
-  outline: 2px solid tomato;
+  display: flex;
 }
+
+address {
+  margin-left: auto;
+}
+.adress .item + .item {
+  margin-left: 50px;
+}
+
 .adress a {
   color: var(--title-text-color);
   font-style: normal;
@@ -148,52 +261,12 @@ a.linkto:focus {
   color: var(--link-primary-color);
 }
 
-/* Стили Main */
-h1 {
-  color: var(--link-seconary-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 46px;
-}
-h2.index {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-h2.none {
-  display: none;
-  padding: 0 0;
-  margin: 0 0;
-}
-h3 {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--primary-text-color);
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
 /* Герой */
 .hero {
   padding-bottom: 0px;
   margin-bottom: 94px;
   margin-top: 0;
   text-align: center;
-  outline: 2px solid tomato;
 }
 
 .button-check {
@@ -267,6 +340,14 @@ section .business {
   height: 80px;
   border-radius: 0px 0px 4px 4px;
   margin: 0;
+}
+
+.container ul {
+  display: flex;
+}
+
+.container li:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Наша команда */
@@ -386,4 +467,19 @@ footer .rights {
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.link.container {
+  display: flex;
+  flex-direction: column;
+}
+
+div ul {
+  display: inline-block;
+  display: flex;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-around;
 }
